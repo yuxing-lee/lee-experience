@@ -159,19 +159,19 @@ const works = [
         name: "高雄科技大學 人工智慧產業化應用研究中心",
         description: "軟體工程師",
         href: "#",
-        icon: ChartPieIcon,
+        img: "./nkust.png",
     },
     {
         name: "博睿科技股份有限公司",
         description: "前端工程師",
         href: "#",
-        icon: CursorArrowRaysIcon,
+        img: "./brilltek.png",
     },
     {
         name: "翔威國際股份有限公司",
         description: "MIS工程師",
         href: "#",
-        icon: FingerPrintIcon,
+        img: "./shinewave.gif",
     },
 ];
 
@@ -180,19 +180,19 @@ const projects = [
         name: "線上影像處理平台",
         description: "",
         href: "#",
-        icon: ChartPieIcon,
+        img: "",
     },
     {
         name: "蛋捲訂購網頁",
         description: "",
         href: "#",
-        icon: CursorArrowRaysIcon,
+        img: "",
     },
     {
         name: "line bot爬蟲應用",
         description: "",
         href: "#",
-        icon: FingerPrintIcon,
+        img: "",
     },
 ];
 

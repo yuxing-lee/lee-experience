@@ -27,14 +27,10 @@
                         :key="item.name"
                         class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                     >
-                        <div
+                        <div v-if="item.img"
                             class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
                         >
-                            <component
-                                :is="item.icon"
-                                class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
-                                aria-hidden="true"
-                            />
+                            <img :src="item.img" />
                         </div>
                         <div class="flex-auto">
                             <a
@@ -58,5 +54,5 @@
 <script setup>
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
 import { ChevronDownIcon } from "@heroicons/vue/20/solid";
-defineProps({"name": String, "lists": Array});
+defineProps({ name: String, lists: Array });
 </script>
