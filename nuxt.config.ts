@@ -5,5 +5,6 @@ export default defineNuxtConfig({
     modules: ['@nuxtjs/tailwindcss', '@nuxt/eslint'],
     app: {
         baseURL: '/lee-experience/',
+        buildAssetsDir: '/static/'
     }
 })
