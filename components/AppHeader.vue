@@ -136,6 +136,7 @@
 <script setup>
 import { ref } from "vue";
 import {
+    PopoverGroup,
     Dialog,
     DialogPanel,
     Disclosure,

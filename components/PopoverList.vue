@@ -3,7 +3,7 @@
         <PopoverButton
             class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900"
         >
-            {{ props.name }}
+            {{ name }}
             <ChevronDownIcon
                 class="h-5 w-5 flex-none text-gray-400"
                 aria-hidden="true"
@@ -23,7 +23,7 @@
             >
                 <div class="p-4">
                     <div
-                        v-for="item in props.name"
+                        v-for="item in lists"
                         :key="item.name"
                         class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                     >
@@ -58,21 +58,5 @@
 <script setup>
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
 import { ChevronDownIcon } from "@heroicons/vue/20/solid";
-
-export interface List {
-    name: string
-    description: string
-    href: string
-    icon: string
-}
-
-export interface Props {
-    name?: string
-    lists?: List[]
-}
-
-const props = withDefaults(defineProps<Props>(), {
-  name: '',
-  lists: () => []
-})
+defineProps({"name": String, "lists": Array});
 </script>
