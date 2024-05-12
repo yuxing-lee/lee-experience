@@ -11,37 +11,14 @@
             </ul>
         </div>
         <div class="w-80">
-            <div v-for="work in works">
-                <div v-if="work.date" class="ps-2 my-2 first:mt-0">
-                    <h3 class="text-xs font-medium uppercase text-gray-500">
-                        {{ work.date }}
-                    </h3>
-                </div>
-                <div
-                    class="flex gap-x-3 hover:scale-105 hover:cursor-pointer hover:bg-sky-500/[.2] ease-in-out duration-300 rounded-md"
-                >
-                    <div
-                        class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200"
-                    >
-                        <div
-                            class="relative z-10 size-7 flex justify-center items-center"
-                        >
-                            <div class="size-2 rounded-full bg-gray-400"></div>
-                        </div>
-                    </div>
-                    <div class="grow pt-0.5 pb-6">
-                        <h3 class="flex gap-x-1.5 font-semibold text-gray-800">
-                            {{ work.title }}
-                        </h3>
-                        <p
-                            v-if="work.description != ''"
-                            class="mt-1 text-sm text-gray-600"
-                        >
-                            {{ work.description }}
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <Timeline
+                v-for="work in works"
+                :date="work.date"
+                :title="work.title"
+                :description="work.description"
+                :navigate="work.navigate"
+            >
+            </Timeline>
         </div>
     </div>
 </template>
@@ -52,6 +29,7 @@ let works = [
         date: "現在",
         title: "高雄科技大學-人工智慧產業化應用研究中心",
         description: "軟體工程師",
+        navigate: "/experience",
     },
     {
         date: "2021/07",
