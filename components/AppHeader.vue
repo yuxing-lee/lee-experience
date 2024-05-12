@@ -25,8 +25,8 @@
                     class="text-sm font-semibold leading-6 text-gray-900"
                     >自我介紹</a
                 >
-                <PopoverList name="工作經歷" :lists="works"/>
-                <PopoverList name="個人專案" :lists="projects"/>
+                <PopoverList name="工作經歷" :lists="works" class="z-20" />
+                <PopoverList name="個人專案" :lists="projects" class="z-20" />
                 <a
                     href="#"
                     class="text-sm font-semibold leading-6 text-gray-900"
@@ -150,9 +150,7 @@ import {
     FingerPrintIcon,
     XMarkIcon,
 } from "@heroicons/vue/24/outline";
-import {
-    ChevronDownIcon,
-} from "@heroicons/vue/20/solid";
+import { ChevronDownIcon } from "@heroicons/vue/20/solid";
 
 const works = [
     {
