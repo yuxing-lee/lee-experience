@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-around items-center mt-6">
+    <div class="flex flex-col justify-around items-center mt-6 lg:flex-row">
         <img src="/man.png" class="w-80" />
         <div class="text-center">
             <p class="text-2xl font-bold mb-2">關於我</p>
