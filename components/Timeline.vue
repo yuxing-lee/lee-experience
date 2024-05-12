@@ -6,7 +6,7 @@
             </h3>
         </div>
         <div
-            class="flex gap-x-3 hover:scale-105 hover:cursor-pointer hover:bg-sky-500/[.2] ease-in-out duration-300 rounded-md"
+            class="flex gap-x-3 rounded-md"
         >
             <div
                 class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200"
@@ -17,7 +17,7 @@
                     <div class="size-2 rounded-full bg-gray-400"></div>
                 </div>
             </div>
-            <div class="grow pt-0.5 pb-6">
+            <div class="grow pt-0.5 mb-4 hover:scale-105 hover:cursor-pointer hover:bg-sky-500/[.2] hover:p-2 ease-in-out duration-300 ">
                 <h3 class="flex gap-x-1.5 font-semibold text-gray-800">
                     {{ title }}
                 </h3>
