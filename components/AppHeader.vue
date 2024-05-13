@@ -21,15 +21,15 @@
             </div>
             <PopoverGroup class="hidden lg:flex lg:gap-x-12">
                 <a
-                    href="#"
-                    class="text-sm font-semibold leading-6 text-gray-900"
+                    @click="navigateTo('/')"
+                    class="text-sm font-semibold leading-6 text-gray-900 cursor-pointer"
                     >自我介紹</a
                 >
                 <PopoverList name="工作經歷" :lists="works" class="z-20" />
                 <PopoverList name="個人專案" :lists="projects" class="z-20" />
                 <a
                     href="#"
-                    class="text-sm font-semibold leading-6 text-gray-900"
+                    class="text-sm font-semibold leading-6 text-gray-900 cursor-pointer"
                     >聯絡方式</a
                 >
             </PopoverGroup>
@@ -156,7 +156,7 @@ const works = [
     {
         name: "高雄科技大學 人工智慧產業化應用研究中心",
         description: "軟體工程師",
-        href: "#",
+        href: "./experience",
         img: "./nkust.png",
     },
     {

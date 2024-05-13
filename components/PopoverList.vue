@@ -25,7 +25,7 @@
                     <div
                         v-for="item in lists"
                         :key="item.name"
-                        class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                        class="group cursor-pointer relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                     >
                         <div v-if="item.img"
                             class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
@@ -34,7 +34,7 @@
                         </div>
                         <div class="flex-auto">
                             <a
-                                :href="item.href"
+                                @click="navigateTo(item.href)"
                                 class="block font-semibold text-gray-900"
                             >
                                 {{ item.name }}
