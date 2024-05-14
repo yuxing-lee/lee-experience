@@ -1,7 +1,7 @@
 <template>
-    <div class="bg-white">
+    <div class="bg-white fixed w-full left-0 top-0 z-20">
         <nav
-            class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 lg:justify-center"
+            class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 lg:justify-center h-16"
             aria-label="Global"
         >
             <div class="flex lg:hidden">

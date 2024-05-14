@@ -1,7 +1,8 @@
 <template>
     <div>
         <AppHeader />
-        <AppSidebar />
-        <NuxtPage />
+        <div class="mt-16">
+            <NuxtPage />
+        </div>
     </div>
 </template>
