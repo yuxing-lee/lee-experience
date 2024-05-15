@@ -1,13 +1,13 @@
 <template>
     <article
-        class="flex flex-col justify-center items-center w-full h-60 p-8 bg-gradient-to-b from-sky-800 to-sky-500 text-gray-100 break-words ease-linear duration-150" :class="{'hover:to-gray-800': tag, 'hover:scale-105': tag}"
+        class="flex flex-col justify-center items-center w-full max-h-96 p-8 bg-gradient-to-b rounded-3xl from-sky-800 to-sky-500 text-gray-100 break-words ease-linear duration-150" :class="{'hover:to-gray-800': tag, 'hover:scale-105': tag}"
         v-on:mouseover="hover = true"
         v-on:mouseleave="hover = false"
     >
         <p class="font-bold text-sm mb-5 lg:text-xl">{{ title }}</p>
         <p>{{ description }}</p>
         <a
-            class="animate-bounce absolute bottom-3"
+            class="animate-bounce -mb-8"
             v-show="tag && hover"
             :href="'#' + tag"
         >
