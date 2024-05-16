@@ -33,6 +33,24 @@
                 />
             </div>
         </div>
+        <hr id="traffic-management" class="my-8 lg:my-16" />
+        <div>
+            <div class="flex w-full h-20 justify-center items-center lg:h-24">
+                <p class="text-xl lg:text-4xl">車流管理平台</p>
+            </div>
+            <div class="flex w-full h-20 justify-center items-center lg:h-24">
+                <p class="text-xl lg:text-4xl">主要貢獻</p>
+            </div>
+            <div
+                class="grid grid-cols-1 gap-4 container mx-auto px-4 lg:grid-cols-3"
+            >
+                <InfoBox
+                    v-for="feature in trafficManagementFeatures"
+                    :title="feature.title"
+                    :description="feature.description"
+                />
+            </div>
+        </div>
         <hr id="5gc" class="my-8 lg:my-16" />
         <div>
             <div class="flex w-full h-20 justify-center items-center lg:h-24">
@@ -69,7 +87,7 @@ let projects = [
     {
         title: "車流管理系統",
         description: "收集各節點端資料，進行圖形化的管理，監控當前節點運作狀態",
-        tag: "",
+        tag: "traffic-management",
     },
     {
         title: "5G OAM平台",
@@ -99,6 +117,24 @@ let trafficFeatures = [
         title: "夜間影像亮度不足",
         description:
             "夜間路燈較少的情況下，影像亮度不足，導致辨識率下降，針對此狀況分析當前畫面可用的元素，針對車燈的特徵來進行分析",
+    },
+];
+
+let trafficManagementFeatures = [
+    {
+        title: "Django+React前後端系統",
+        description:
+            "使用django+react開發前後端系統，並透過API串接，將資料庫資料顯示在前端介面上，並進行操作",
+    },
+    {
+        title: "節點管理系統",
+        description:
+            "使用openstreetmap，透過經緯度管理各路口的節點資訊，並透過節點群組的方式整理每個路口所需的資料，並上傳到server",
+    },
+    {
+        title: "影像調閱",
+        description:
+            "原始影像存放在節點端，使用者進行調閱時，將節點端影像傳送到伺服器並保留，再透過server端進行影像合併追蹤軌跡以供調閱",
     },
 ];
 
