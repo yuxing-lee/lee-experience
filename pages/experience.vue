@@ -21,7 +21,7 @@
                 <p class="text-xl lg:text-4xl">車流辨識系統</p>
             </div>
             <div class="flex w-full h-20 justify-center items-center lg:h-24">
-                <p class="text-xl lg:text-4xl">主要貢獻</p>
+                <p class="text-xl lg:text-4xl">負責項目</p>
             </div>
             <div
                 class="grid grid-cols-1 gap-4 container mx-auto px-4 lg:grid-cols-4"
@@ -39,7 +39,7 @@
                 <p class="text-xl lg:text-4xl">車流管理平台</p>
             </div>
             <div class="flex w-full h-20 justify-center items-center lg:h-24">
-                <p class="text-xl lg:text-4xl">主要貢獻</p>
+                <p class="text-xl lg:text-4xl">負責項目</p>
             </div>
             <div
                 class="grid grid-cols-1 gap-4 container mx-auto px-4 lg:grid-cols-3"
@@ -57,7 +57,7 @@
                 <p class="text-xl lg:text-4xl">5G OAM平台</p>
             </div>
             <div class="flex w-full h-20 justify-center items-center lg:h-24">
-                <p class="text-xl lg:text-4xl">主要貢獻</p>
+                <p class="text-xl lg:text-4xl">負責項目</p>
             </div>
             <div
                 class="grid grid-cols-1 gap-4 container mx-auto px-4 lg:grid-cols-3"
