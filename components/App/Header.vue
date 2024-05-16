@@ -157,19 +157,19 @@ const works = [
         name: "高雄科技大學 人工智慧產業化應用研究中心",
         description: "軟體工程師",
         href: "./experience",
-        img: "./nkust.png",
+        img: "./work/nkust.png",
     },
     {
         name: "博睿科技股份有限公司",
         description: "前端工程師",
         href: "#",
-        img: "./brilltek.png",
+        img: "./work/brilltek.png",
     },
     {
         name: "翔威國際股份有限公司",
         description: "MIS工程師",
         href: "#",
-        img: "./shinewave.gif",
+        img: "./work/shinewave.gif",
     },
 ];
 
