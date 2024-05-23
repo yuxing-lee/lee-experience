@@ -32,6 +32,17 @@
                     :description="feature.description"
                 />
             </div>
+            <div class="w-full h-20 text-center mt-6 lg:h-24">
+                <p class="text-xl lg:text-4xl">Demo</p>
+                <p class="text-lg mt-3">
+                    左上(原始影片)、左下(原始前景遮罩)、右上(校正畫面亮度劇烈變化)、右下(校正畫面亮度劇烈變化+去除陰影)
+                </p>
+            </div>
+            <div class="flex w-full justify-center items-center">
+                <video class="h-96" controls>
+                    <source :src="'./demo.mp4'" type="video/mp4" />
+                </video>
+            </div>
         </div>
         <hr id="traffic-management" class="my-8 lg:my-16" />
         <div>
@@ -109,7 +120,7 @@ let trafficFeatures = [
             "在白天時因為有太陽的關係，所以取出前景時有可能會含有陰影的區塊，若是使用陰影區塊較大的物件拿去辨識，可能會造成誤判，而因為陰影區域理論上來說是一塊顏色變化不大的區塊，可以透過計算顏色變化狀態，將陰影區塊去除",
     },
     {
-        title: "校正畫面劇烈變化",
+        title: "校正畫面亮度劇烈變化",
         description:
             "攝影機會因為大型物件靠近攝影機、天氣變化而影像到畫面的亮度，當亮度發生劇烈變化時，可能會造成辨識上的問題，針對此問題去分析變化前後的亮度，動態調整畫面亮度，降低亮度劇烈變化的影響",
     },
